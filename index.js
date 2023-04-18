@@ -15,7 +15,18 @@ async function moveNPC(){
     await npc.walkWest(2700)
     await npc.walkNorth(400)
  } 
-moveNPC()
+
+
+async function Loop {
+ let times = 0
+ while(times<5){
+    times++
+    await moveNPC()
+ }}
+
+ Loop()
+
+// moveNPC()
 
 
 // Create the inventory
